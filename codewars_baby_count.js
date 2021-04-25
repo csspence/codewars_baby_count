@@ -8,9 +8,13 @@ Given an array of names and a specific name string, return the number of times t
 countName( ["Tom","Bob","Harry","Bob"] , "Bob") //should return 2, since "Bob" shows up 2 times in the array
 */
 
-function countName(anArr, name){
-//anArr is an array of strings. name is a single string
-//This function should return the total number of times the name string is found in anArr.
-//Your code here
+const countName = (anArr, name) => {
+  let count = 0;
+  for(let i = 0; i < anArr.length; i++) {
+    if(anArr[i] === name) {
+      count++;
+    }
+  }
 
+  return count;
 };
