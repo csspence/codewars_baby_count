@@ -15,5 +15,6 @@ const countName = (anArr, name) => {
       count++;
     }
   }
+  
   return count;
 };
